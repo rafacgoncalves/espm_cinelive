@@ -1,0 +1,60 @@
+﻿<div class="row">
+    <div class="col-sm-6 book ebook">
+        <img src="assets/img/ebook.png" alt="">
+    </div>
+    <div class="col-sm-5 form-box">
+        <div class="form-top">
+            <div class="form-top-left">
+                <h3>Receba nosso conteúdo</h3>
+                <p>Cadastre-se</p>
+            </div>
+            <div class="form-top-right">
+                <i class="fa fa-pencil"></i>
+            </div>
+        </div>
+        <div class="form-bottom">
+            <!-- Top content -->
+            <form class="registration-form">
+                <div class="form-group">
+                    <label class="sr-only" for="form-first-name">Nome</label>
+                    <input type="text" name="form-first-name" placeholder="Nome" class="form-first-name form-control" id="form-first-name" required ng-model="cliente.nome">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-last-name">Último Sobrenome</label>
+                    <input type="text" name="form-last-name" placeholder="Último Sobrenome" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.sobrenome">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-last-name">CPF</label>
+                    <input type="text" name="form-last-name" placeholder="CPF" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.cpf">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-last-name">Telefone</label>
+                    <input type="text" name="form-last-name" placeholder="Telefone" class="form-last-name form-control" id="form-last-name" ng-model="cliente.telefone">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-last-name">CEP</label>
+                    <input type="text" name="form-last-name" placeholder="CEP" class="form-last-name form-control" id="form-last-name" ng-model="cliente.cep">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-last-name">E-mail</label>
+                    <input type="text" name="form-last-name" placeholder="E-mail" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.email">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-last-name">Código do cupom</label>
+                    <input type="text" name="form-last-name" placeholder="Código do cupom de compra" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.codigocupom">
+                </div>
+                <button type="button" class="btn btnRed" ng-click="salva()">Cadastrar!</button>
+                <!--<div class="form-group">
+                    <label class="sr-only" for="form-last-name">Senha</label>
+                    <input type="text" name="form-last-name" placeholder="Senha" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.senha">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-email">Confirmar senha</label>
+                    <input type="text" name="form-email" placeholder="Confirmar senha" class="form-email form-control" id="form-email" required ng-model="cliente.senha">
+                </div>
+                <button type="button" class="btn btnRed" ng-click="salva()">Cadastrar!</button>
+                <!--<button type="submit" class="btn btnfacebook col-xs-6  col-sm-12 col-md-6 col-xs-12">Logar com Facebook!</button>-->
+            </form>
+        </div> <!-- Fim Formulário -->
+    </div>
+</div>

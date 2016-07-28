@@ -1,0 +1,880 @@
+﻿<!DOCTYPE html>
+<html ng-app="espm_cinelive" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrar</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicon and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+</head>
+<body>
+    <!-- Top menu -->
+    <!--
+        <nav class="navbar navbar-inverse navbar-no-bg" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+
+                </div>
+            </div>
+        </nav>
+    -->
+    <!-- Fim Top menu -->
+    <!-- Top content -->
+    <div class="top-content">
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <div class="description">
+                        </div>
+                        <h1><strong>#CINELIVE</strong>ESPM</h1>
+                        <div class="col-sm-6 book">
+                            <img src="assets/img/CineLiveApresenta.png" alt="">
+                        </div>
+                        <div class="col-sm-6 book">
+                            <img src="assets/img/EspmNoCinema.png" alt="" class="EspmNoCinema">
+                        </div>
+                    </div>
+                </div>
+                <div ng-view></div>    
+            </div>
+        </div>
+    </div> <!-- Fim Top content -->
+    <!-- Insirir Codigo -->
+    <!--<div ng-hide=1 class="top-content">
+        <div class="inner-bg">
+            <div class="container container-nova-margem">
+                <div class="row2">
+                    <div class="form-top2">
+                        <div class="form-top-left2">
+                            <h3>Digite abaixo o código que recebeu por email</h3>
+                        </div>
+                        <div class="form-top-right">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                    </div>
+                    <div class="form-caixa">
+                        <div class="form-top">
+                            <div class="col-xs-12 col-md-12">
+                                <form class="insirir-codigo registration-form">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="form-first-name">Digite o código que recebeu por e-mail</label>
+                                        <input type="text" name="form-first-name" placeholder="Digite o código..." class="form-first-name form-control" id="form-first-name" required ng-model="codigopromocional.codigo">
+                                    </div>
+                                </form>
+                                <button class="btn right btnRed" type="submit">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>--> <!-- Fim Insirir Codigo -->
+    <!-- Inauguração - Destaque -->
+
+    <div class="top-content">
+        <!-- Top content -->
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 text">
+                        <h1>
+                            <strong>
+                                ABERTURA &nbsp;
+                                <br>
+                            </strong>
+                            Sessões: às 20h00 / 90 min (60 apresentação + 30 perguntas)
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12  col-sm-12 col-md-12">
+                            <img src="assets/img/palestrante3.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- Fim Top content -->
+    <!-- Agenda -->
+    <div class="top-content">
+        <div class="inner-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="eventos">
+                        <h2 class="title-block-item" style="color: #FFFFFF; background-color: #19b9e7; padding: 10px;">PRÓXIMOS EVENTOS</h2>
+                    </div>
+                    <div class="pane-content-eventos">
+                        <div class="listagem-de-eventos">
+                            <div class="visualizar-enventos">
+                                <!-- Fim Inauguração - Destaque -->
+                                <!-- Eventos/Abertura/Nizan Guanaes -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>16</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Ago</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Abertura</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: TBD
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">Nizan Guanaes</span>
+                                            </div>
+                                        </div>
+                                        <div class="div-endereco">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fim Eventos/Abertura/Nizan Guanaes -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ciclo 1 -->
+                <div class="row">
+                    <div class="eventos">
+                        <h3 class="title-block-item" style="color: #FFFFFF; background-color: #19b9e7; padding: 10px;">
+                            CICLO 1
+                            <br>
+                            <span> Assunto: </span>
+                            <span> Marketing Digital</span>
+                        </h3>
+                        <!--
+                                                <h3 class="ciclo1-assunto">
+                                                   <span> Assunto: </span>
+                                                    <span> Marketing Digital</span>
+                                                </h3>
+                        -->
+                    </div>
+                    <div class="pane-content-eventos">
+                        <div class="listagem-de-eventos">
+                            <div class="visualizar-enventos">
+                                <!-- Eventos - Ciclo 1 - 1 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>23</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Ago</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 1</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Game Marketing
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 1 - 2 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>30</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Ago</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 1</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Game Marketing de Busca - SEO
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 1 - 4 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>6</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Set</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 1</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Produção de Conteúdo Digital
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 1 - 3 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>13</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Set</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 1</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Plataformas Digitais e Tecnologia
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ciclo 2 -->
+                <div class="row">
+                    <div class="eventos">
+                        <h3 class="title-block-item" style="color: #FFFFFF; background-color: #19b9e7; padding: 10px;">
+                            CICLO 2
+                            <br>
+                            <span> Assunto: </span>
+                            <span> Tendências em Comunicação com o Mercado  </span>
+                        </h3>
+                    </div>
+                    <div class="pane-content-eventos">
+                        <div class="listagem-de-eventos">
+                            <div class="visualizar-enventos">
+                                <!-- Eventos - Ciclo 2 - 1 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>20</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Set</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 2</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Geração Millenium
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 2 - 2 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>27</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Set</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 2</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Transmídia e Storytelling
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 2 - 4 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>4</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Out</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 2</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Produção de Conteúdo Digital
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 2 - 3 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>11</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Out</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 2</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Inbound Marketing
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ciclo 3 -->
+                <div class="row">
+                    <div class="eventos">
+                        <h3 class="title-block-item" style="color: #FFFFFF; background-color: #19b9e7; padding: 10px;">
+                            CICLO 3
+                            <br>
+                            <span> Assunto: </span>
+                            <span> Tendências em Comunicação com o Mercado  </span>
+                        </h3>
+                    </div>
+                    <div class="pane-content-eventos">
+                        <div class="listagem-de-eventos">
+                            <div class="visualizar-enventos">
+                                <!-- Eventos - Ciclo 3 - 1 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>18</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Out</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 3</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Inovação e Design Thinking
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 3 - 2 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>25</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Out</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 3</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Inovação em Branded Content
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 3 - 3 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>1</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Nov</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 3</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Mapas Mentais: como organizar pensamentos
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 3 - 4 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>8</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Nov</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 3</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Criatividade para Inovação
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ciclo 4 -->
+                <div class="row">
+                    <div class="eventos">
+                        <h3 class="title-block-item" style="color: #FFFFFF; background-color: #19b9e7; padding: 10px;">
+                            CICLO 4
+                            <br>
+                            <span> Assunto: </span>
+                            <span> O Novo Consumidor Brasileiro  </span>
+                        </h3>
+                    </div>
+                    <div class="pane-content-eventos">
+                        <div class="listagem-de-eventos">
+                            <div class="visualizar-enventos">
+                                <!-- Eventos - Ciclo 4 - 1 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>22</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Nov</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 4</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Neurociência aplicada ao Marketing
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                                <!-- Eventos - Ciclo 4 - 2 -->
+                                <div class="evento">
+                                    <div class="evento-local">
+                                        <div class="evento-estado">São Paulo</div>
+                                        <div class="evento-data">
+                                            <div class="div-evento-data">
+                                                <div class="eventodata">
+                                                    <div class="data-eventos">
+                                                        <div class="data-dia">
+                                                            <span>29</span>
+                                                        </div>
+                                                        <div class="data-mes">
+                                                            <span>Nov</span>
+                                                        </div>
+                                                        <div class="decoration"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Div-local">
+                                        <span class="span-local">
+                                            <a href="#">Ciclo 4</a>
+                                        </span>
+                                        <div class="div-endereco">
+                                            <div class="div-endereco-local ">
+                                                Tema: Segmentação Psicográfica
+                                            </div>
+                                        </div>
+                                        <div class="div-palestrante">
+                                            <div class="div-palestrante-dia">
+                                                <span class="negrito">Palestrante:</span> <span class="negrito">#</span>
+                                            </div>
+                                        </div>
+                                        <!--
+                                                                                <div class="div-endereco">
+                                                                                    <div class="div-endereco-local">
+                                                                                        Local: CINELIVE  - Auditório (8º andar) - Rua do Rosário, 111 - Centro
+                                                                                    </div>
+                                                                                </div>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- Fim Eventos -->
+            </div>
+        </div>
+    </div> <!-- Fim Agenda -->
+    <section id="footerRights">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright">Copyright &copy; 2016 / All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Javascript -->
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <script src="assets/js/retina-1.1.0.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="vendor/angular-resource/angular-resource.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/services/ClienteService.js"></script>
+    <script src="js/controllers/ClienteController.js"></script>
+    <script src="js/controllers/CadastroEfetuadoController.js"></script>
+
+
+
+
+    <!--[if lt IE 10]>
+        <script src="assets/js/placeholder.js"></script>
+    <![endif]-->
+</body>
+</html>

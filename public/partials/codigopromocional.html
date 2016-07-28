@@ -1,0 +1,27 @@
+﻿<div class="row">
+    <div class="col-sm-6 book ebook">
+        <img src="assets/img/ebook.png" alt="">
+    </div>
+    <div class="col-sm-5 form-box">
+        <div class="form-top">
+            <div class="form-top-left">
+                <h3>Receba nosso conteúdo</h3>
+                <p>{{textoinformativo}}</p>
+            </div>
+            <div class="form-top-right">
+                <i class="fa fa-pencil"></i>
+            </div>
+        </div>
+        <div class="form-bottom">
+            <!-- Top content -->
+            <form class="registration-form">
+                <div class="form-group">
+                    <label class="sr-only" for="form-last-name">Código de compra</label>
+                    <input type="text" name="form-last-name" placeholder="Código de compra" class="form-last-name form-control" id="form-last-name" ng-model="codigopromocionla.codigo">
+                </div>
+                <button type="button" class="btn btnRed" ng-click="salva()">Cadastrar!</button>
+
+            </form>
+        </div> <!-- Fim Formulário -->
+    </div>
+</div>
