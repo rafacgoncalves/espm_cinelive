@@ -16,6 +16,7 @@
     "express-load": "^1.1.14",
     "method-override": "^2.3.2",
     "mongodb": "^2.0.39",
-    "mongoose": "^4.1.1"
+    "mongoose": "^4.1.1",
+    "raven": "^0.11.0"
   }
 }
