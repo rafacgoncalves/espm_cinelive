@@ -14,36 +14,41 @@
         </div>
         <div class="form-bottom">
             <!-- Top content -->
-            <form class="registration-form">
-                <div class="form-group">
-                    <label class="sr-only" for="form-first-name">Nome</label>
-                    <input type="text" name="form-first-name" placeholder="Nome" class="form-first-name form-control" id="form-first-name" required ng-model="cliente.nome">
+            <form name="formCadastro" class="registration-form" novalidate> 
+                <div class="form-group" ng-class="{ 'has-error' : formCadastro.firstName.$invalid && !formCadastro.firstName.$pristine }">
+                    <label class="sr-only" for="firstName">Nome</label>
+                    <input type="text" name="firstName" placeholder="Nome" class="firstName form-control" id="firstName" required ng-model="cliente.nome">
+                    <p ng-show="formCadastro.firstName.$invalid && !formCadastro.firstName.$pristine" class="help-block">Nome é requerido.</p>
+                </div>
+                <div class="form-group" ng-class="{ 'has-error' : formCadastro.lastName.$invalid && !formCadastro.lastName.$pristine }">
+                    <label class="sr-only" for="lastName">Último Sobrenome</label>
+                    <input type="text" name="lastName" placeholder="Último Sobrenome" class="lastName form-control" id="lastName" required ng-model="cliente.sobrenome">
+                    <p ng-show="formCadastro.lastName.$invalid && !formCadastro.lastName.$pristine" class="help-block">Último sobrenome é requerido.</p>
+                </div>
+                <div class="form-group" ng-class="{ 'has-error' : formCadastro.cpf.$invalid && !formCadastro.cpf.$pristine }">
+                    <label class="sr-only" for="cpf">CPF</label>
+                    <input type="text" name="cpf" placeholder="CPF" class="cpf form-control" id="cpf" required ng-model="cliente.cpf">
+                    <p ng-show="formCadastro.cpf.$invalid && !formCadastro.cpf.$pristine" class="help-block">CPF é requerido.</p>
                 </div>
                 <div class="form-group">
-                    <label class="sr-only" for="form-last-name">Último Sobrenome</label>
-                    <input type="text" name="form-last-name" placeholder="Último Sobrenome" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.sobrenome">
+                    <label class="sr-only" for="telefone">Telefone</label>
+                    <input type="text" name="telefone" placeholder="Telefone" class="telefone form-control" id="telefone" ng-model="cliente.telefone">
                 </div>
                 <div class="form-group">
-                    <label class="sr-only" for="form-last-name">CPF</label>
-                    <input type="text" name="form-last-name" placeholder="CPF" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.cpf">
+                    <label class="sr-only" for="cep">CEP</label>
+                    <input type="text" name="cep" placeholder="CEP" class="cep form-control" id="cep" ng-model="cliente.cep">
                 </div>
-                <div class="form-group">
-                    <label class="sr-only" for="form-last-name">Telefone</label>
-                    <input type="text" name="form-last-name" placeholder="Telefone" class="form-last-name form-control" id="form-last-name" ng-model="cliente.telefone">
+                <div class="form-group" ng-class="{ 'has-error' : formCadastro.email.$invalid && !formCadastro.email.$pristine }"> 
+                    <label class="sr-only" for="email">E-mail</label>
+                    <input type="text" name="email" placeholder="E-mail" class="email form-control" id="email" required ng-model="cliente.email">
+                    <p ng-show="formCadastro.email.$invalid && !formCadastro.email.$pristine" class="help-block">Digite um e-mail válido.</p>
                 </div>
-                <div class="form-group">
-                    <label class="sr-only" for="form-last-name">CEP</label>
-                    <input type="text" name="form-last-name" placeholder="CEP" class="form-last-name form-control" id="form-last-name" ng-model="cliente.cep">
+                <div class="form-group" ng-class="{ 'has-error' : formCadastro.codigocupom.$invalid && !formCadastro.codigocupom.$pristine }">
+                    <label class="sr-only" for="codigocupom">Código do cupom</label>
+                    <input type="text" name="codigocupom" placeholder="Código do cupom de compra" class="codigocupom form-control" id="codigocupom" required ng-model="cliente.codigocupom">
+                    <p ng-show="formCadastro.codigocupom.$invalid && !formCadastro.codigocupom.$pristine" class="help-block">Código do cupom requerido</p>
                 </div>
-                <div class="form-group">
-                    <label class="sr-only" for="form-last-name">E-mail</label>
-                    <input type="text" name="form-last-name" placeholder="E-mail" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.email">
-                </div>
-                <div class="form-group">
-                    <label class="sr-only" for="form-last-name">Código do cupom</label>
-                    <input type="text" name="form-last-name" placeholder="Código do cupom de compra" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.codigocupom">
-                </div>
-                <button type="button" class="btn btnRed" ng-click="salva()">Cadastrar!</button>
+                <button type="button" class="btn btnRed" ng-disabled="!formCadastro.$valid" ng-click="salva()">Cadastrar!</button>
                 <!--<div class="form-group">
                     <label class="sr-only" for="form-last-name">Senha</label>
                     <input type="text" name="form-last-name" placeholder="Senha" class="form-last-name form-control" id="form-last-name" required ng-model="cliente.senha">

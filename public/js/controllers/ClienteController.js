@@ -22,21 +22,25 @@ angular.module('espm_cinelive').controller('ClienteController',
     };
     
     $scope.salva = function () {
-        $scope.cliente.$save()
-		.then(function (cliente) {
-            $scope.mensagem = {
-                texto: 'Salvo com sucesso'
-            };
-            //$scope.cliente = new Cliente();
-            console.log(cliente);
-            $location.path('/cadastroefetuado/' + cliente._id);
-        })
-		.catch(function (erro) {
-            $scope.mensagem = {
-                texto: 'N�o foi poss�vel salvar o cliente.'
-            };
-            console.log(erro);
-        });
+
+        if ($scope.formCadastro.$valid) {
+             
+            $scope.cliente.$save()
+            .then(function (cliente) {
+                $scope.mensagem = {
+                    texto: 'Salvo com sucesso'
+                };
+                //$scope.cliente = new Cliente();
+                console.log(cliente);
+                $location.path('/cadastroefetuado/' + cliente._id);
+            })
+            .catch(function (erro) {
+                $scope.mensagem = {
+                    texto: 'N�o foi poss�vel salvar o cliente.'
+                };
+                console.log(erro);
+            });
+        };
     };
 
 });
