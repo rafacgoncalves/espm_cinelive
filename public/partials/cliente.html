@@ -14,39 +14,41 @@
         </div>
         <div class="form-bottom">
             <!-- Top content -->
-            <form name="formCadastro" class="registration-form" novalidate> 
+            <form name="formCadastro" class="registration-form" novalidate>
                 <div class="form-group" ng-class="{ 'has-error' : formCadastro.firstName.$invalid && !formCadastro.firstName.$pristine }">
                     <label class="sr-only" for="firstName">Nome</label>
-                    <input type="text" name="firstName" placeholder="Nome" class="firstName form-control" id="firstName" required ng-model="cliente.nome">
-                    <p ng-show="formCadastro.firstName.$invalid && !formCadastro.firstName.$pristine" class="help-block">Nome é requerido.</p>
+                    <input type="text" name="firstName" placeholder="Nome" class="firstName form-control" id="firstName" required ng-model="cliente.nome" ng-maxlength="20">
+                    <p ng-show="formCadastro.firstName.$invalid && !formCadastro.firstName.$pristine" class="help-block">Nome é requerido, e com no máximo 20 caracteres.</p>
                 </div>
                 <div class="form-group" ng-class="{ 'has-error' : formCadastro.lastName.$invalid && !formCadastro.lastName.$pristine }">
                     <label class="sr-only" for="lastName">Último Sobrenome</label>
-                    <input type="text" name="lastName" placeholder="Último Sobrenome" class="lastName form-control" id="lastName" required ng-model="cliente.sobrenome">
-                    <p ng-show="formCadastro.lastName.$invalid && !formCadastro.lastName.$pristine" class="help-block">Último sobrenome é requerido.</p>
+                    <input type="text" name="lastName" placeholder="Último Sobrenome" class="lastName form-control" id="lastName" required ng-model="cliente.sobrenome" ng-maxlength="40">
+                    <p ng-show="formCadastro.lastName.$invalid && !formCadastro.lastName.$pristine" class="help-block">Último sobrenome é requerido, e com no máximo 40 caracteres.</p>
                 </div>
                 <div class="form-group" ng-class="{ 'has-error' : formCadastro.cpf.$invalid && !formCadastro.cpf.$pristine }">
                     <label class="sr-only" for="cpf">CPF</label>
-                    <input type="text" name="cpf" placeholder="CPF" class="cpf form-control" id="cpf" required ng-model="cliente.cpf">
-                    <p ng-show="formCadastro.cpf.$invalid && !formCadastro.cpf.$pristine" class="help-block">CPF é requerido.</p>
+                    <input type="text" name="cpf" placeholder="CPF (somente os números)" class="cpf form-control" id="cpf" required ng-model="cliente.cpf" ng-maxlength="11">
+                    <p ng-show="formCadastro.cpf.$invalid && !formCadastro.cpf.$pristine" class="help-block">CPF é requerido, e com no máximo 11 caracteres.</p>
                 </div>
-                <div class="form-group">
+                <div class="form-group" ng-class="{ 'has-error' : formCadastro.telefone.$invalid && !formCadastro.telefone.$pristine }">
                     <label class="sr-only" for="telefone">Telefone</label>
-                    <input type="text" name="telefone" placeholder="Telefone" class="telefone form-control" id="telefone" ng-model="cliente.telefone">
+                    <input type="text" name="telefone" placeholder="Telefone" class="telefone form-control" id="telefone" ng-model="cliente.telefone" ng-maxlength="11">
+                    <p ng-show="formCadastro.telefone.$invalid && !formCadastro.telefone.$pristine" class="help-block">Telefone deve ter no máximo 11 caracteres. Digite apenas números.</p>
                 </div>
-                <div class="form-group">
+                <div class="form-group" ng-class="{ 'has-error' : formCadastro.cep.$invalid && !formCadastro.cep.$pristine }">
                     <label class="sr-only" for="cep">CEP</label>
-                    <input type="text" name="cep" placeholder="CEP" class="cep form-control" id="cep" ng-model="cliente.cep">
+                    <input type="text" name="cep" placeholder="CEP" class="cep form-control" id="cep" ng-model="cliente.cep" ng-maxlength="7">
+                    <p ng-show="formCadastro.cep.$invalid && !formCadastro.cep.$pristine" class="help-block">CEP deve ter no máximo 7 caracteres. Digite apenas números.</p>
                 </div>
-                <div class="form-group" ng-class="{ 'has-error' : formCadastro.email.$invalid && !formCadastro.email.$pristine }"> 
+                <div class="form-group" ng-class="{ 'has-error' : formCadastro.email.$invalid && !formCadastro.email.$pristine }">
                     <label class="sr-only" for="email">E-mail</label>
-                    <input type="text" name="email" placeholder="E-mail" class="email form-control" id="email" required ng-model="cliente.email">
-                    <p ng-show="formCadastro.email.$invalid && !formCadastro.email.$pristine" class="help-block">Digite um e-mail válido.</p>
+                    <input type="text" name="email" placeholder="E-mail" class="email form-control" id="email" required ng-model="cliente.email" ng-maxlength="100">
+                    <p ng-show="formCadastro.email.$invalid && !formCadastro.email.$pristine" class="help-block">Digite um e-mail válido e com no máximo 100 caracteres.</p>
                 </div>
                 <div class="form-group" ng-class="{ 'has-error' : formCadastro.codigocupom.$invalid && !formCadastro.codigocupom.$pristine }">
                     <label class="sr-only" for="codigocupom">Código do cupom</label>
-                    <input type="text" name="codigocupom" placeholder="Código do cupom de compra" class="codigocupom form-control" id="codigocupom" required ng-model="cliente.codigocupom">
-                    <p ng-show="formCadastro.codigocupom.$invalid && !formCadastro.codigocupom.$pristine" class="help-block">Código do cupom requerido</p>
+                    <input type="text" name="codigocupom" placeholder="Código do cupom de compra" class="codigocupom form-control" id="codigocupom" required ng-model="cliente.codigocupom" ng-maxlength="100">
+                    <p ng-show="formCadastro.codigocupom.$invalid && !formCadastro.codigocupom.$pristine" class="help-block">Código do cupom requerido e com no máximo 100 caracteres.</p>
                 </div>
                 <button type="button" class="btn btnRed" ng-disabled="!formCadastro.$valid" ng-click="salva()">Cadastrar!</button>
                 <!--<div class="form-group">
