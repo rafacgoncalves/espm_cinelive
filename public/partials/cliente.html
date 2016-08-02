@@ -37,8 +37,8 @@
                 </div>
                 <div class="form-group" ng-class="{ 'has-error' : formCadastro.cep.$invalid && !formCadastro.cep.$pristine }">
                     <label class="sr-only" for="cep">CEP</label>
-                    <input type="text" name="cep" placeholder="CEP" class="cep form-control" id="cep" ng-model="cliente.cep" ng-maxlength="7">
-                    <p ng-show="formCadastro.cep.$invalid && !formCadastro.cep.$pristine" class="help-block">CEP deve ter no máximo 7 caracteres. Digite apenas números.</p>
+                    <input type="text" name="cep" placeholder="CEP" class="cep form-control" id="cep" ng-model="cliente.cep" ng-maxlength="8">
+                    <p ng-show="formCadastro.cep.$invalid && !formCadastro.cep.$pristine" class="help-block">CEP deve ter no máximo 8 caracteres. Digite apenas números.</p>
                 </div>
                 <div class="form-group" ng-class="{ 'has-error' : formCadastro.email.$invalid && !formCadastro.email.$pristine }">
                     <label class="sr-only" for="email">E-mail</label>
