@@ -22,8 +22,7 @@ module.exports = function () {
         },
         email: {
             type: String,
-            required: true,
-            index: { unique: true }
+            required: true
         },
         codigocupom: {
             type: String,
